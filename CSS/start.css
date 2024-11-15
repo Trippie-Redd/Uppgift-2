@@ -1,39 +1,11 @@
-body { 
-    display: grid;
-
-    width: 100vw;
-    min-height: 100vh;
-
-    grid-template-columns: 1% 2fr 1fr 1%;
-    grid-template-rows: 1fr 0.6fr 6fr 1fr;
-    grid-template-areas: 
-    ". header header ."
-    ". nav nav ."
-    ". main sidebar ."
-    ". footer footer .";
+:root {
+    --primary-color: #2E4053;     /* Darkbluegrey */
+    --secondary-color: #3498DB;   /* Midblue */
+    --accent-color: #E74C3C;      /* Red-orange */  
+    --background-color: #ECF0F1;  /* Light grey */
+    --text-color: #2C3E50;        /* Darkgrey */
 }
 
-header {
-    grid-area: header;
-    background-color: grey;
-}
-
-.nav {
-    grid-area: nav;
-    background-color: beige;
-}
-
-main {
-    grid-area: main;
-    background-color: white;
-}
-
-aside {
-    grid-area: sidebar;
-    background-color: grey;
-}
-
-footer {
-    grid-area: footer;
-    background-color: antiquewhite;
+body {
+    color: var(--text-color);
 }
