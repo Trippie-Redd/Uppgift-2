@@ -3,17 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/grid.css"> 
+    <link rel="stylesheet" href="CSS/constants.css"> 
     <link rel="stylesheet" href="CSS/contact.css">
     <title>Contact</title>
 </head>
 <body>
-    <header> Header </header>
-    <div class="nav"> Nav </div>
+    <header> 
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.44/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/YgK3cGzO7RhaiTgq/scene.splinecode"></spline-viewer>
+    </header>
+    
+    <div class="nav">
+        <button type="button" onclick="location.href='start.html';" >Start</button>
+        <button type="button" onclick="location.href='products.html';" >Products</button>
+        <button type="button" onclick="location.href='contact.html';" >Contact Us</button>
+        <button type="button" onclick="location.href='url(www.youtube.com/watch?v=ZQCWmN4Ce_k)';" >Replace later</button>
+    </div>
 
     <aside> Sidebar </aside>
-    <main> Main </main>
+    
+    <main>
+        <Form action="contact">
+            <h2>Submit a problem</h2>
+            
+            <h3>Select which game*: </h3>
+            <label>
+                <input type="radio" name="game" value="Get_Home"/>
+                Get Home
+            </label>
+            <label>
+                <input type="radio" name="game" value="Fortnite"/>
+                Fortnite
+            </label>
+            <label>
+                <input type="radio" name="game" value="Gta_V"/>
+                GTA V
+            </label>
+            <label>
+                <input type="radio" name="game" value="Misc"/>
+                Miscellaneous
+            </label>
 
-    <footer> Footer </footer>
+            <h3>Contact information*: </h3>
+            <label for="email">Email*:</label>
+            <input id="email" type="text"/>
+
+            <label for="fname">First name:</label>
+            <input id="fname" type="text"/>
+
+            <label for="sname">Surname:</label>
+            <input id="sname" type="text"/>
+
+            <h3>Describe your problem*: </h3>
+            <textarea name="message" cols="30" rows="4"></textarea>
+
+            <input type="submit"/>
+        </Form>
+    </main>
+
+    <footer> 
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>Our goal is to provide enjoyable gaming experiences for everyone. Contact us, or refer to our products, for more information.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Site Links</h2>
+                <ul>
+                    <li><a href="start.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Replace later</a></li>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h2>Social Media</h2>
+                <ul>
+                    <li><a href="start.html">Instagram</a></li>
+                    <li><a href="products.html">Youtube</a></li>
+                    <li><a href="contact.html">TikTok</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: pixlstreamstudios@gmail.com</p>
+                <p>Phone: 555 555 55 55</p>
+                <p>Address: Teknikum, Växjö, Sweden</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Pixlstream UF | All Rights Reserved</p>
+        </div>
+    </footer>
 </body>
 </html>
