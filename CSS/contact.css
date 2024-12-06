@@ -28,6 +28,7 @@ body {
 header {
     grid-area: header;
     background-color: grey;
+    
 }
 
 .nav {
@@ -37,15 +38,47 @@ header {
 
 main {
     grid-area: main;
-    background-color: white;
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main textarea {
+    max-width: 75%;
+    max-height: 5;
+}
+
+#contactinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 aside {
     grid-area: sidebar;
-    background-color: grey;
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside img {
+    width: 90%;
+    border-radius: 4%;
+}
+
+aside hr {
+    width: 80%;
 }
 
 footer {
     grid-area: footer;
-    background-color: antiquewhite;
+    background-color: #8E9775;
+    color: var(--text-color);
 }

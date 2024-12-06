@@ -20,12 +20,24 @@
         <button type="button" onclick="location.href='url(www.youtube.com/watch?v=ZQCWmN4Ce_k)';" >Replace later</button>
     </div>
 
-    <aside> Sidebar </aside>
+    <aside>
+        <h2>Other means of contact</h2>
+        <hr>
+        <ul>
+            <li>Email: pixlstreamstudios@gmail.com</li>
+            <li>Phone: 555 555 55 55</li>
+            <li>Address: Teknikum, Växjö, Sweden</li>
+        </ul>
+
+        <img src="assets/Teknikum.jpg" alt="Teknikum">
+    </aside>
     
     <main>
         <Form action="contact">
             <h2>Submit a problem</h2>
             
+            <hr>
+
             <h3>Select which game*: </h3>
             <label>
                 <input type="radio" name="game" value="Get_Home"/>
@@ -45,14 +57,16 @@
             </label>
 
             <h3>Contact information*: </h3>
-            <label for="email">Email*:</label>
-            <input id="email" type="text"/>
+            <div id="contactinfo">
+                <label for="email">Email*:</label>
+                <input id="email" type="text"/>
 
-            <label for="fname">First name:</label>
-            <input id="fname" type="text"/>
+                <label for="fname">First name:</label>
+                <input id="fname" type="text"/>
 
-            <label for="sname">Surname:</label>
-            <input id="sname" type="text"/>
+                <label for="sname">Surname:</label>
+                <input id="sname" type="text"/>
+            </div>
 
             <h3>Describe your problem*: </h3>
             <textarea name="message" cols="30" rows="4"></textarea>
