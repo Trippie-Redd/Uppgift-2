@@ -9,15 +9,14 @@
 </head>
 <body>
     <header> 
-        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.44/build/spline-viewer.js"></script>
-        <spline-viewer url="https://prod.spline.design/YgK3cGzO7RhaiTgq/scene.splinecode"></spline-viewer>
+        <p>Gangy</p>
     </header>
     
     <div class="nav">
-        <button type="button" onclick="location.href='start.html';" >Start</button>
-        <button type="button" onclick="location.href='products.html';" >Products</button>
-        <button type="button" onclick="location.href='contact.html';" >Contact Us</button>
-        <button type="button" onclick="location.href='url(www.youtube.com/watch?v=ZQCWmN4Ce_k)';" >Replace later</button>
+        <button type="button" onclick="location.href='start.html';">Start</button>
+        <button type="button" onclick="location.href='products.html';">Products</button>
+        <button type="button" onclick="location.href='contact.html';">Contact Us</button>
+        <button type="button" onclick="location.href='url(www.youtube.com/watch?v=ZQCWmN4Ce_k)';">Replace later</button>
     </div>
 
     <aside>
@@ -33,46 +32,47 @@
     </aside>
     
     <main>
-        <Form action="contact">
-            <h2>Submit a problem</h2>
-            
+        <form action="contact">
+            <h2>Submit a Problem</h2>
             <hr>
 
-            <h3>Select which game*: </h3>
-            <label>
-                <input type="radio" name="game" value="Get_Home"/>
-                Get Home
-            </label>
-            <label>
-                <input type="radio" name="game" value="Fortnite"/>
-                Fortnite
-            </label>
-            <label>
-                <input type="radio" name="game" value="Gta_V"/>
-                GTA V
-            </label>
-            <label>
-                <input type="radio" name="game" value="Misc"/>
-                Miscellaneous
-            </label>
-
-            <h3>Contact information*: </h3>
-            <div id="contactinfo">
-                <label for="email">Email*:</label>
-                <input id="email" type="text"/>
-
-                <label for="fname">First name:</label>
-                <input id="fname" type="text"/>
-
-                <label for="sname">Surname:</label>
-                <input id="sname" type="text"/>
+            <h3>Select Which Game*: </h3>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="game" value="Get_Home">
+                    Get Home
+                </label>
+                <label>
+                    <input type="radio" name="game" value="Fortnite">
+                    Fortnite
+                </label>
+                <label>
+                    <input type="radio" name="game" value="Gta_V">
+                    GTA V
+                </label>
+                <label>
+                    <input type="radio" name="game" value="Misc">
+                    Miscellaneous
+                </label>
             </div>
 
-            <h3>Describe your problem*: </h3>
-            <textarea name="message" cols="30" rows="4"></textarea>
+            <h3>Contact Information*: </h3>
+            <div id="contact-info">
+                <label for="email">Email*:</label>
+                <input id="email" type="text" placeholder="example@domain.com" required>
 
-            <input type="submit"/>
-        </Form>
+                <label for="fname">First Name:</label>
+                <input id="fname" type="text" placeholder="First Name">
+
+                <label for="sname">Surname:</label>
+                <input id="sname" type="text" placeholder="Last Name">
+            </div>
+
+            <h3>Describe Your Problem*: </h3>
+            <textarea name="message" cols="30" rows="5" placeholder="Describe the issue you're facing..." required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </main>
 
     <footer> 
