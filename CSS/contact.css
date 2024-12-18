@@ -33,12 +33,10 @@ header {
 .nav {
     grid-area: nav;
     background-color: var(--secondary-color);
-    padding: 10px 0;
 }
 
 .nav button {
     background-color: var(--primary-color);
-    padding: 10px 15px;
 }
 
 .nav button:hover {
@@ -49,7 +47,7 @@ main {
     grid-area: main;
     background-color: var(--background-color);
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 0;
     border: 1px solid var(--primary-color);
     display: flex;
     flex-direction: column;
@@ -89,6 +87,21 @@ main textarea {
     gap: 10px;
 }
 
+main .contact-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main .contact-info input {
+    width: 100%;
+}
+
+main .contact-info label {
+    display: flex;
+    width: 100%;
+}
+
 main button {
     background-color: var(--primary-color);
     color: white;
@@ -109,7 +122,9 @@ aside {
     grid-area: sidebar;
     background-color: var(--secondary-color);
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 0;
+    border: 1px solid var(--primary-color);
+    border-left: 0;
     text-align: center;
 }
 
@@ -123,12 +138,14 @@ footer {
     grid-area: footer;
     background-color: var(--primary-color);
     color: white;
-    padding: 20px 0;
-    text-align: center;
+}
+
+.footer-section h2 {
+    color: var(--secondary-color);
 }
 
 /* Phone layout */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
     body {
         grid-template-columns: 1% 1fr 1%;
         grid-template-rows: auto;

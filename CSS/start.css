@@ -18,15 +18,6 @@ body {
         ". nav nav ."
         ". sidebar main ."
         ". footer footer .";
-    
-    grid-template-columns: 1% 1fr 1%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        ". header ."
-        ". nav ."
-        ". main ."
-        ". sidebar ."
-        ". footer .";
 
     margin: 0;
     font-family: Arial, sans-serif;
@@ -37,17 +28,16 @@ body {
 header {
     grid-area: header;
     background-color: var(--primary-color);
+    color: var(--background-color);
 }
 
 .nav {
     grid-area: nav;
     background-color: var(--secondary-color);
-    padding: 10px 0;
 }
 
 .nav button {
     background-color: var(--primary-color);
-    padding: 10px 15px;
 }
 
 .nav button:hover {
@@ -59,7 +49,7 @@ main {
     background-color: white;
     padding: 20px;
     border: 1px solid var(--primary-color);
-    border-radius: 8px;
+    border-radius: 0;
 }
 
 main h1, main h2 {
@@ -75,7 +65,7 @@ aside {
     background-color: var(--background-color);
     padding: 15px;
     border: 1px solid var(--secondary-color);
-    border-radius: 8px;
+    border-radius: 0;
 }
 
 aside h2 {
@@ -102,45 +92,14 @@ footer {
     grid-area: footer;
     background-color: var(--primary-color);
     color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.footer-section {
-    margin: 10px;
 }
 
 .footer-section h2 {
     color: var(--secondary-color);
 }
 
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-section ul li a:hover {
-    text-decoration: underline;
-}
-
-.footer-bottom {
-    margin-top: 10px;
-    font-size: 0.9em;
-}
-
 /* Phone layout */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
     body {
         grid-template-columns: 1% 1fr 1%;
         grid-template-rows: auto;
