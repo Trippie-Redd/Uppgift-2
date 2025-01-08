@@ -9,10 +9,11 @@
 body {
     display: grid;
 
+    min-height: 100vh;
     max-height: 120vh;
 
     grid-template-columns: 1% 1fr 1fr 1fr 1%;
-    grid-template-rows: 1fr 0.6fr 6fr 1fr;
+    grid-template-rows: 1fr 0.6fr 3fr 3fr 1fr;
     grid-template-areas: 
         ". header header header ."
         ". nav nav nav ."
@@ -24,4 +25,86 @@ body {
     font-family: Arial, sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
+}
+
+header {
+    grid-area: header;
+    background: var(--primary-color);
+    color: white;
+}
+
+.nav {
+    grid-area: nav;
+    background: var(--secondary-color);
+}
+
+.nav button {
+    background: var(--accent-color);
+    color: var(--text-color);
+}
+
+aside {
+    grid-area: sidebar;
+    background: var(--accent-color);
+    padding: 1rem;
+    color: var(--text-color);
+}
+
+#content-1 {
+    grid-area: content-1;
+}
+
+#content-2 {
+    grid-area: content-2;
+}
+
+#content-1, #content-2 {
+    padding: 1rem;
+    background: var(--background-color);
+    border: 1px solid var(--accent-color);
+}
+
+main {
+    grid-area: main;
+    padding: 1rem;
+    background: var(--background-color);
+    border: 1px solid var(--accent-color);
+}
+
+footer {
+    grid-area: footer;
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Phone layout */
+@media screen and (max-width: 700px) {
+    body {
+        grid-template-columns: 1% 1fr 1%;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+            ". header ."
+            ". nav ."
+            ". sidebar ."
+            ". content-1 ."
+            ". content-2 ."
+            ". main ."
+            ". footer .";
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    main, aside {
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav button {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
 }

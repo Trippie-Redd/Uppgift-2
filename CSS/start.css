@@ -82,9 +82,9 @@ aside ul li {
     margin-bottom: 10px;
 }
 
-aside ul li a {
+.start-links {
     text-decoration: none;
-    color: var(--accent-color);
+    background-color: var(--accent-color);
     font-weight: bold;
 }
 
