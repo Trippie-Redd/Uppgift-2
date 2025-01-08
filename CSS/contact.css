@@ -162,6 +162,12 @@ footer {
         gap: 5px;
     }
 
+    .nav button {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
     main, aside {
         padding: 10px;
         border-radius: 5px;
